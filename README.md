@@ -1,11 +1,11 @@
 # Bountiful Food Pantry operations demo
 
-Interactive prototype using synthetic data only.
-
 [Open the operations demo](https://foundations-and-horizons.github.io/BFP-Demo/)
 
-The link becomes available after the GitHub Pages deployment succeeds.
+The demo link becomes available once GitHub Pages is enabled: Settings → Pages → Deploy from a branch → main → / (root) → Save.
 
-Market, Mobile Bus, Mobile Truck, Mini Market, Pantry Packs, food and Grocery Rescue, executive and geographic dashboards, and board-report preview. Demo changes are stored only in the current browser. Use Reset demo data to start over.
+Synthetic demonstration only. No confidential project sources, real clients, or live integrations are included.
 
-No confidential project sources, real client information, or live integrations are included. The production system will be designed separately with authentication and appropriate access controls.
+Start with Daily work. Market, Mobile Bus / Mobile Truck, Mini Market, and Pantry Packs have separate places. Food and Grocery Rescue, executive dashboards, geographic reach, operational reports, and editable board-report preview share the same activity records. Use Generate report / Save PDF in the preview to print a board report.
+
+Changes stay in the current browser. Reset demo data restores the original sample records. Northern Davis is a planned location with no activity. Volunteer management remains external. The production system will be a separate secured application.
