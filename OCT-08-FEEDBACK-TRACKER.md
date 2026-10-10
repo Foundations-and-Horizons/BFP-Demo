@@ -79,3 +79,9 @@ Reviewed the complete 103-segment transcript alongside Rebekah's 10/8/26 plannin
 - Demo remains entirely synthetic, GitHub Pages hosted. No real personal records or shared credentials.
 - BFP to own independent GitHub, Vercel and Supabase, with F&H access removed after migration, testing, documentation and training.
 - Deliver a user guide with screenshots, quick reference, admin guide and handoff checklist.
+
+## October 10 consolidated demo push
+- Daily Work now includes browser-local staff follow-up tasks with owner, due date, open/done status and CSV export. No secure staff assignments or notifications.
+- Daily Work includes a fictional Barrels/Gaylords internal request log with pending/approved/completed states and CSV export. Public intake and email notifications are **not** connected.
+- Inventory count printing uses the dedicated count-sheet function rather than an older duplicate handler.
+- These are demonstration workflows only; browser visual testing, staff validation, and production authorization remain outstanding.
