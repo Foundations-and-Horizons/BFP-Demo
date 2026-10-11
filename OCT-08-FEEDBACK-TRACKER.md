@@ -233,3 +233,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Added `BFP-STAFF-REVIEW-AND-INPUTS.md`: targeted walkthroughs, owner-specific material requests and proposed one-on-one agendas for Rebekah, Rachelle and Tryn; an internal acceptance checklist; and clear exclusion of volunteer management from the current paid work order.
 - Volunteer management remains Coming Soon and separately funded; aggregate volunteer-hours reporting is not a commitment to build volunteer management.
 - Live-browser form/PDF testing is not completed; source-only changes must not be labeled accepted.
+
+
+## October 11 month-end and board source integrity push
+- Full-month reporting coverage now rejects selections spanning more than 120 months; the readiness calculation cannot silently truncate older months and show a false pass.
+- Added a shared physical count validity check requiring present, finite, nonnegative opening and actual counts. Applied it to the board packet month-by-month count readiness, dashboard month-end readiness and inventory closeout guide. The warehouse exception table now distinguishes invalid count values from provisional counts.
+- These checks assess source completeness only; they do not certify stock math or implement month locks. Rachelle's source rules and live browser/PDF acceptance remain open.
+- Volunteer management remains Coming Soon and out of current paid scope.
