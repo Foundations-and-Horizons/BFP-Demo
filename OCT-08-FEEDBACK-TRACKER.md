@@ -167,3 +167,9 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Register is scoped to the selected report month and location where source records support it; warehouse exception requests and physical counts currently have month-level rather than location-level records and must not be treated as validated location-specific evidence.
 - Added one-click CSV export of evidence status, demo source counts, and required human review. Presence is not approval; reviewed warehouse requests are not automatically posted adjustments.
 - Still pending Rachelle’s official warehouse category, tare, return and re-entry rules; production shared storage, authenticated approvals, and enforceable period locks. Live browser acceptance testing is still required.
+
+
+## October 11 warehouse data-quality push
+- Added Inventory month-end exception review for truck load/return arithmetic (including returned pounds exceeding loaded), missing/invalid warehouse movement weights/types, and invalid food ledger weights.
+- Added exportable CSV evidence for these checks; they are arithmetic/completeness flags only, not certified reconciliation or authorization.
+- Physical count status remains provisional pending Rachelle's count rules, tare weights and truck return/re-entry treatment. Browser acceptance and synthetic-data workflow testing still outstanding.
