@@ -213,3 +213,9 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Corrected missing `const` declaration in `warehouseExceptionRowsForMonth(month)`; without it the multi-month helper assigned several temporary values to implicit globals.
 - Tried to access the public GitHub Pages demo from the available local browser runtime; DNS resolution for `foundations-and-horizons.github.io` failed in that runtime, so no claim of a completed live-browser acceptance test is warranted.
 - Next acceptance work remains: run synthetic input workflows, validate CSV contents, test multi-month/location board readiness and print/PDF pagination in an actual accessible browser.
+
+
+## October 11 report date-range safeguards
+- Board report month coverage now rejects malformed/invalid dates and inverted periods before evaluating monthly source completeness.
+- For periods not covering full calendar months, readiness keeps the period warning and does not manufacture a full-month source checklist that could be misleading.
+- Source-level inspection only. Browser form behavior and printed board report remain to be validated through the live application.
