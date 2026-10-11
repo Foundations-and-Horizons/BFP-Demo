@@ -185,3 +185,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Clarified warehouse month-end evidence statuses: no recorded incoming/outgoing transactions are not automatically a failed source check; staff must verify whether the period truly had zero activity.
 - Explicitly labels physical counts and warehouse adjustment requests as month-scoped, not location-scoped, when a single location is selected. Market, financial and review records continue to use their available location keys.
 - Evidence register still distinguishes record presence from validation, and cannot lock a month. Full live-browser workflow and actual PDF print testing remain pending.
+
+
+## October 11 warehouse-to-board source review
+- Found and fixed a board readiness scope defect: monthly Market aggregates, financials and staff review presence now use the selected location (or all locations) rather than hardcoded Bountiful.
+- Physical count coverage now checks each distinct month rather than comparing total count record rows with total months; count evidence is explicitly labeled warehouse-wide and not location-specific.
+- Source inspection confirmed the warehouse evidence/exception panels, export handler, blank weight guard and truck over-allocation guard remain present.
+- **Testing limitation:** source-level regression inspection only. Full synthetic browser workflow, form interaction, exported CSV verification, and print-to-PDF pagination remain untested in a real browser; do not mark them passed.
