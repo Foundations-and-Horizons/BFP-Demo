@@ -246,3 +246,9 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Board source-readiness checks now explicitly require a Market monthly aggregate and a financial summary for the active Bountiful location for every selected reporting month. The All locations option currently checks Bountiful only, because Northern Davis is planned and not an active source. Selecting Northern Davis explicitly does not silently borrow Bountiful source rows.
 - The demo JavaScript asset query was bumped to v74 so GitHub Pages clients fetch the updated application after deployment.
 - These are code commits, not live-browser acceptance. Review actual location reporting and source definitions with Rebekah before production.
+
+
+## October 11 combined finance and warehouse input integrity
+- The All locations monthly finance totals now use active Bountiful records only, matching the board readiness rule. Planned Northern Davis records are not silently combined into active financial figures.
+- Warehouse movement completeness flags negative pounds for ordinary movement types; signed adjustments/disposals remain distinguishable pending Rachelle's final rules.
+- These are source-level code changes, not completed browser acceptance or approved accounting rules. Volunteer management remains outside the paid work order.
