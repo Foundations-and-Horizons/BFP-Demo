@@ -116,3 +116,16 @@ th{letter-spacing:.2px}
 .grant-empty p{font-size:13px;color:#728277;max-width:440px;margin:9px auto 0;line-height:1.6}
 @media(max-width:1150px){.grant-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.grant-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.grant-metric{padding:16px;min-height:105px}.grant-metric strong{font-size:23px}.grant-editor,.grant-register{padding:20px 16px}.grant-form-grid{grid-template-columns:1fr;gap:17px}.grant-form-grid .grant-wide{grid-column:auto}.grant-form-actions span{margin-left:0;width:100%}.grant-editor-heading{flex-direction:column;gap:12px}}
+
+/* Annual Pantry Packs: structured desktop and mobile data-entry form */
+.annual-packs-editor{overflow:hidden}
+.annual-packs-form{display:block;margin-top:24px;max-width:100%}
+.annual-packs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 26px;align-items:start}
+.annual-packs-grid>label{display:flex;flex-direction:column;align-items:stretch;gap:9px;min-width:0;font-size:14px;font-weight:650;line-height:1.45;color:#294b3d}
+.annual-packs-grid input{box-sizing:border-box;display:block;width:100%;min-width:0;height:48px;margin:0;padding:11px 14px;border:1px solid #c9d9cf;border-radius:10px;background:#fff;color:#173c2b;font:inherit;font-size:16px;font-weight:450}
+.annual-packs-grid input:focus-visible{outline:3px solid #9cc8a9;outline-offset:2px;border-color:#287e4a}
+.annual-packs-grid .annual-packs-wide{grid-column:1/-1}
+.annual-packs-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;border-top:1px solid #e3ece6;margin-top:25px;padding-top:23px}
+.annual-packs-actions button{min-height:46px;padding:11px 24px}
+.annual-packs-actions .muted{font-size:13px}
+@media(max-width:700px){.annual-packs-grid{grid-template-columns:1fr;gap:18px}.annual-packs-grid .annual-packs-wide{grid-column:auto}.annual-packs-actions{align-items:stretch;flex-direction:column;gap:10px}.annual-packs-actions button{width:100%}}
