@@ -192,3 +192,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Physical count coverage now checks each distinct month rather than comparing total count record rows with total months; count evidence is explicitly labeled warehouse-wide and not location-specific.
 - Source inspection confirmed the warehouse evidence/exception panels, export handler, blank weight guard and truck over-allocation guard remain present.
 - **Testing limitation:** source-level regression inspection only. Full synthetic browser workflow, form interaction, exported CSV verification, and print-to-PDF pagination remain untested in a real browser; do not mark them passed.
+
+
+## October 11 month-end quality-gate integration
+- Staff month-end source status now includes five preliminary checks: warehouse count, selected-location finance summary, selected-location Market aggregate, no pending warehouse adjustment requests, and no flagged warehouse data-quality exceptions.
+- Inventory closeout guide now shows both pending adjustment requests and flagged data-quality issues, and staff review lookup respects selected location.
+- This is a **review signal**, not a lock, approval, reconciliation certification, or publication gate. Source presence does not mean validated totals.
+- Live browser workflow testing and exported board PDF verification remain open; these commits were not end-to-end browser tested.
