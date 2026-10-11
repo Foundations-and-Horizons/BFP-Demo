@@ -215,3 +215,12 @@ th{letter-spacing:.2px}
 #content[data-view="board"] .board-extra.board-options .card{padding:22px 24px}
 #content[data-view="board"] .board-extra:focus-within{border-color:#8abf9d}
 @media print{#content[data-view="board"] .board-extra{display:none!important}}
+
+/* Mobile Truck reconciliation: legible field labels, aligned controls, deliberate actions. */
+#truckEntry.planning-form{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px 20px;align-items:start;margin:22px 0 12px;padding:23px 24px;background:#f7faf8;border:1px solid #dce8df;border-radius:15px}
+#truckEntry.planning-form>label{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:8px!important;min-width:0;margin:0;font-size:12px;font-weight:700;line-height:1.4;color:#294d3c}
+#truckEntry.planning-form>label>input{box-sizing:border-box;display:block;width:100%!important;min-width:0!important;max-width:none!important;height:44px!important;margin:0!important;padding:9px 12px!important;border:1px solid #c9d9cf;border-radius:9px;background:#fff;color:#183e31;font-size:14px;font-weight:450}
+#truckEntry.planning-form>label>input:focus-visible{outline:3px solid #a6d3b5;outline-offset:1px;border-color:#298354}
+#truckEntry.planning-form>button[type="submit"]{grid-column:1/-1;justify-self:start;margin-top:3px;min-height:43px;padding:10px 22px}
+@media(max-width:1050px){#truckEntry.planning-form{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#truckEntry.planning-form{grid-template-columns:1fr;padding:17px;gap:14px}#truckEntry.planning-form>button[type="submit"]{width:100%}}
