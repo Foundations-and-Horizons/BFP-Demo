@@ -179,3 +179,9 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Fixed exception checker treating blank pound fields as numeric zero: blank incoming/outgoing weights, warehouse movement pounds and truck loaded/returned weights now flag for review.
 - Added truck over-allocation detection when returned + transferred + disposed pounds exceed loaded pounds, in addition to negative weights and returned > loaded.
 - Source-level checks confirm the exception panel is included in Inventory, CSV export handler exists, and the board/readiness/count/closeout functions are still present. This is **not** a live browser end-to-end workflow test; board print QA, actual form submission, and Rachelle's reconciliation approval remain open.
+
+
+## October 11 evidence register scope and zero-activity correction
+- Clarified warehouse month-end evidence statuses: no recorded incoming/outgoing transactions are not automatically a failed source check; staff must verify whether the period truly had zero activity.
+- Explicitly labels physical counts and warehouse adjustment requests as month-scoped, not location-scoped, when a single location is selected. Market, financial and review records continue to use their available location keys.
+- Evidence register still distinguishes record presence from validation, and cannot lock a month. Full live-browser workflow and actual PDF print testing remain pending.
