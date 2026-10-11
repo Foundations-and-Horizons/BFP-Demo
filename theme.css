@@ -159,3 +159,46 @@ th{letter-spacing:.2px}
 .compact-workspace-arrow{font-size:18px;color:#8ba598}
 @media(max-width:1100px){.compact-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.compact-workspace-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.program-home main{padding:16px}.compact-command{padding:16px}.compact-command-title{align-items:flex-start;flex-direction:column}.compact-command-title h2{font-size:23px}.compact-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.compact-stats button{min-height:88px;padding:12px}.compact-stats strong{font-size:22px}.compact-workspace-grid{grid-template-columns:1fr}.compact-workspace{min-height:65px}}
+
+/* Premium BFP home identity — color and depth without sacrificing compactness. */
+.program-home{background:radial-gradient(circle at 88% 8%,#e1eee6 0,transparent 35%),linear-gradient(150deg,#f7f8f2,#edf4f0 80%)}
+.program-home header{border-bottom:1px solid #dce7dc;box-shadow:0 2px 12px #153f3010}
+.program-home .compact-command{position:relative;overflow:hidden;background:linear-gradient(112deg,#103e35 0%,#19594a 61%,#1c6756 100%);border:1px solid #2c6e5c;border-radius:19px;box-shadow:0 16px 34px #123e3426;padding:24px 26px}
+.program-home .compact-command:before{content:"";position:absolute;right:-60px;top:-175px;width:450px;height:450px;border:1px solid #ffffff17;border-radius:50%;pointer-events:none}
+.program-home .compact-command:after{content:"";position:absolute;right:20px;top:-110px;width:310px;height:310px;border:1px solid #ffffff14;border-radius:50%;pointer-events:none}
+.program-home .compact-command-title{position:relative;z-index:1}
+.program-home .compact-command-title .eyebrow{color:#c8e7cc;font-weight:800;letter-spacing:1.8px}
+.program-home .compact-command-title h2{color:#fff;font-size:29px;letter-spacing:-.95px}
+.program-home .compact-command-title p{color:#c9e1d8;font-size:12px}
+.program-home .compact-command-actions button{border:1px solid #b2d3c4;background:#ffffff13;color:#fff}
+.program-home .compact-command-actions button.primary{background:#f4d486;border:1px solid #f4d486;color:#25422f;box-shadow:0 5px 15px #08291d25}
+.program-home .compact-command-actions button:hover{background:#ffffff26}
+.program-home .compact-command-actions button.primary:hover{background:#ffe2a0}
+.program-home .compact-stats{position:relative;z-index:1;gap:11px}
+.program-home .compact-stats button{background:#ffffffef;border:1px solid #ffffff80;box-shadow:0 4px 15px #0a302622;min-height:104px;transition:transform .18s,box-shadow .18s,background .18s}
+.program-home .compact-stats button:hover{transform:translateY(-2px);box-shadow:0 8px 18px #092a272f;background:#fff}
+.program-home .compact-stats button:nth-child(1){border-top:4px solid #43a978}
+.program-home .compact-stats button:nth-child(2){border-top:4px solid #4b93c6}
+.program-home .compact-stats button:nth-child(3){border-top:4px solid #e2b65c}
+.program-home .compact-stats button:nth-child(4){border-top:4px solid #d99073}
+.program-home .compact-stats button:nth-child(5){border-top:4px solid #7e8bc7}
+.program-home .compact-stats span{color:#527365}
+.program-home .compact-stats strong{color:#153f35;font-size:28px;letter-spacing:-.7px}
+.program-home .compact-stats small{color:#687d70}
+.program-home .compact-workspaces{margin-top:22px}
+.program-home .compact-section-heading h2{font-size:20px;letter-spacing:-.5px;color:#173f35}
+.program-home .compact-section-heading span{color:#6d8175}
+.program-home .compact-workspace{background:#fff;border:1px solid #dce7df;box-shadow:0 4px 13px #1d4a3610;border-radius:13px;min-height:79px;transition:transform .18s,box-shadow .18s,border-color .18s}
+.program-home .compact-workspace:hover{transform:translateY(-2px);background:#fff;box-shadow:0 10px 23px #1d4a3620;border-color:#b9d4c3}
+.program-home .compact-workspace-icon{background:#e2f1e7;color:#237448}
+.program-home .compact-workspace:nth-child(2) .compact-workspace-icon{background:#e0edfb;color:#2769aa}
+.program-home .compact-workspace:nth-child(3) .compact-workspace-icon{background:#f9e9dc;color:#ae663d}
+.program-home .compact-workspace:nth-child(4) .compact-workspace-icon{background:#f7ecd0;color:#987018}
+.program-home .compact-workspace:nth-child(5) .compact-workspace-icon{background:#e2f1ec;color:#257b65}
+.program-home .compact-workspace:nth-child(6) .compact-workspace-icon{background:#e6e9f8;color:#5665a4}
+.program-home .compact-workspace:nth-child(7) .compact-workspace-icon{background:#e0eff4;color:#26778d}
+.program-home .compact-workspace:nth-child(8) .compact-workspace-icon{background:#f5e6e6;color:#a45d63}
+.program-home .compact-workspace-copy strong{color:#1c4335;font-size:13px}
+.program-home .compact-workspace-arrow{color:#3d8c64}
+@media(max-width:680px){.program-home .compact-command{padding:18px}.program-home .compact-command-title h2{font-size:24px}.program-home .compact-stats strong{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.program-home .compact-stats button,.program-home .compact-workspace{transition:none}}
