@@ -137,3 +137,12 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Off-site reporting now explicitly organizes service by stop/location and links Mini Market location reporting from the Off-site Services workspace.
 - Mobile Truck weight reconciliation remains a separate demonstration workflow and is explicitly conditional on Rachelle confirming how outgoing loads and returned food should re-enter inventory; no bus weights are inferred from truck data.
 - Grocery Rescue now clearly uses Incoming / Outgoing Food as its single daily receipt source, while its own screen is a reporting view. The preferred MealConnect daily handoff and fallback monthly import are labeled pending rather than represented as connected.
+
+
+## October 11 large-batch monthly-first / import workflow
+- Cross-checked F03, F06, F17, F18 and F19 against the October 8 planning material before implementation.
+- Added monthly-reporting context to Market, Data Import Center, Inventory and Monthly Financials, distinguishing full-calendar-month sources from exact-range daily records and offering one-click full-month selection.
+- Full-month context shows Market aggregate, financial summary, physical inventory count and staff-review status with direct next actions.
+- Import validation errors now persist visibly; the full drop zone is keyboard/pointer actionable; staged preview retains every accepted Market field and explicit replacement status.
+- Import history now records a demo batch identifier and whether replacement confirmation was involved. Authenticated uploader identity and immutable version history remain production/backend work.
+- This materially advances F03/F06/F17/F19. F05 remains open: the GitHub demo does not pretend to enforce secure month locks/reopening.
