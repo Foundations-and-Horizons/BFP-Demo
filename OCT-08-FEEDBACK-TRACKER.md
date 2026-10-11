@@ -160,3 +160,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - The guide reports whether the physical count exists, how many warehouse adjustment requests remain pending, whether a provisional reconciliation can be reviewed, and whether staff review has been recorded.
 - The workflow explicitly keeps Rachelle’s unresolved rules open: official physical inventory materials, average-weight/count-sheet rules, and final truck return/re-entry treatment are not invented by the demo.
 - A completed staff month-end review can continue directly to Board Reporting. No month lock or formal approval is claimed.
+
+
+## October 11 warehouse evidence register push
+- Inventory month-end now includes a consolidated evidence register for physical counts, incoming and outgoing ledger presence, pending warehouse exceptions, monthly Market aggregates, financial summaries, staff review, unresolved truck returns, and unverified MealConnect handoff.
+- Register is scoped to the selected report month and location where source records support it; warehouse exception requests and physical counts currently have month-level rather than location-level records and must not be treated as validated location-specific evidence.
+- Added one-click CSV export of evidence status, demo source counts, and required human review. Presence is not approval; reviewed warehouse requests are not automatically posted adjustments.
+- Still pending Rachelle’s official warehouse category, tare, return and re-entry rules; production shared storage, authenticated approvals, and enforceable period locks. Live browser acceptance testing is still required.
