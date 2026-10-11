@@ -268,3 +268,28 @@ th{letter-spacing:.2px}
 #content[data-view="food"] .donor-letter-page small{display:block;margin-top:40px;font:11px/1.5 Arial,sans-serif;color:#6b7770}
 @media(max-width:700px){#content[data-view="food"] .donor-letter-page{padding:25px}}
 @media print{body:has(#donorLetterPreview:not([hidden])) header,body:has(#donorLetterPreview:not([hidden])) nav,body:has(#donorLetterPreview:not([hidden])) aside,body:has(#donorLetterPreview:not([hidden])) #content>*:not(#letterPrep){display:none!important}body:has(#donorLetterPreview:not([hidden])) #letterPrep>*:not(#donorLetterPreview),body:has(#donorLetterPreview:not([hidden])) #donorLetterPreview>.section-head{display:none!important}body:has(#donorLetterPreview:not([hidden])) .donor-letter-page{border:0;box-shadow:none;break-after:page;margin:0;padding:35px}}
+
+/* Final usability pass: calm, deliberate hierarchy with generous accessible targets. */
+.skip-link{position:fixed;top:-100px;left:16px;z-index:10000;background:#fff;color:#154d37;padding:12px 20px;border:3px solid #1b7049;border-radius:10px;font-weight:700}
+.skip-link:focus{top:12px}
+#main-content:focus{outline:none}
+button,select,input[type="date"],input[type="number"],input[type="text"]{min-height:42px}
+button:focus-visible,a:focus-visible,summary:focus-visible,[role="tab"]:focus-visible{outline:3px solid #236fc5!important;outline-offset:3px!important}
+#content .card,#content .notice{overflow-wrap:break-word}
+#content .section-head{gap:14px}
+#content .section-head button{flex-shrink:0}
+#content details>summary{cursor:pointer}
+#content table{font-variant-numeric:tabular-nums}
+#content th{text-align:left;white-space:normal}
+#content td,#content th{vertical-align:middle;line-height:1.5}
+#content td button{min-height:42px}
+#content .muted{line-height:1.55}
+#content input,#content select,#content textarea{max-width:100%}
+#content .toolbar{row-gap:10px}
+#modal{max-width:min(720px,calc(100vw - 32px));max-height:calc(100dvh - 36px);overflow-y:auto}
+#modal::backdrop{background:rgba(8,31,25,.62);backdrop-filter:blur(3px)}
+#modal .dialog-head{position:sticky;top:0;z-index:2;background:#fff;padding-top:5px}
+#toast{max-width:min(480px,calc(100vw - 24px))}
+@media(max-width:800px){#content .section-head{flex-wrap:wrap}#content .section-head>div{min-width:0}#content .section-head button{max-width:100%}#content .card{min-width:0}}
+@media(max-width:550px){#content .toolbar button{white-space:normal}#content .section-head button{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
