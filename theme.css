@@ -224,3 +224,20 @@ th{letter-spacing:.2px}
 #truckEntry.planning-form>button[type="submit"]{grid-column:1/-1;justify-self:start;margin-top:3px;min-height:43px;padding:10px 22px}
 @media(max-width:1050px){#truckEntry.planning-form{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){#truckEntry.planning-form{grid-template-columns:1fr;padding:17px;gap:14px}#truckEntry.planning-form>button[type="submit"]{width:100%}}
+
+/* Inventory workspace: predictable forms and legible tables at desktop and tablet widths. */
+#content[data-view="inventory"] .planning-form{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px;align-items:start;margin:20px 0}
+#content[data-view="inventory"] .planning-form>label{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:7px!important;min-width:0;font-size:12px;font-weight:700;line-height:1.4;color:#2b5141}
+#content[data-view="inventory"] .planning-form>label>input,
+#content[data-view="inventory"] .planning-form>label>select,
+#content[data-view="inventory"] .planning-form>label>textarea{box-sizing:border-box;display:block;width:100%!important;max-width:none!important;min-width:0!important;height:43px;margin:0!important;padding:9px 11px;border:1px solid #c9d9cf;border-radius:9px;background:#fff;color:#183e31;font-size:14px;font-weight:450}
+#content[data-view="inventory"] .planning-form>label>textarea{height:auto;min-height:85px}
+#content[data-view="inventory"] .planning-form>button{grid-column:1/-1;justify-self:start;min-height:43px;padding:10px 20px;margin-top:2px}
+#content[data-view="inventory"] .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:12px}
+#content[data-view="inventory"] .metrics>*{min-width:0}
+#content[data-view="inventory"] .card{min-width:0}
+#content[data-view="inventory"] .card table{width:100%;border-collapse:collapse}
+#content[data-view="inventory"] .card .section-head{flex-wrap:wrap;gap:12px}
+#content[data-view="inventory"] .card .section-head>div{min-width:0;flex:1 1 320px}
+@media(max-width:700px){#content[data-view="inventory"] .planning-form{grid-template-columns:1fr;gap:13px}#content[data-view="inventory"] .planning-form>button{width:100%}#content[data-view="inventory"] .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:430px){#content[data-view="inventory"] .metrics{grid-template-columns:1fr}}
