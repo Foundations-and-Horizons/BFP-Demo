@@ -70,3 +70,15 @@ th{letter-spacing:.2px}
 .board-presentation-actions>span{color:#d0e5d6;font-size:11px;text-align:center}
 @media(max-width:850px){.board-presentation-intro{flex-direction:column;align-items:stretch;padding:27px 24px}.board-presentation-actions{min-width:0}}
 @media print{.board-presentation-intro{display:none!important}}
+
+
+/* Reporting is an everyday workspace, not a presentation microsite. */
+.board-presentation-intro{display:none!important}
+.board-workspace-heading{display:flex;justify-content:space-between;align-items:center;gap:22px;margin-bottom:20px;padding:24px 28px;background:#fff;border:1px solid #e1e9e3;border-radius:17px;box-shadow:0 4px 18px #183c2b08}
+.board-workspace-heading .eyebrow{font-size:10px;letter-spacing:1.4px;color:#33724d}
+.board-workspace-heading h2{font-size:27px;letter-spacing:-.8px;color:#193f30;margin:7px 0}
+.board-workspace-heading p{font-size:14px;color:#60766a;margin:0 0 10px;line-height:1.55}
+.board-source-status{font-size:12px;color:#4c735d}
+.board-workspace-heading button{white-space:nowrap}
+@media(max-width:700px){.board-workspace-heading{flex-direction:column;align-items:stretch;padding:21px}.board-workspace-heading button{width:100%}}
+@media print{.board-workspace-heading{display:none!important}}
