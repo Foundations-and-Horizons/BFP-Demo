@@ -146,3 +146,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Import validation errors now persist visibly; the full drop zone is keyboard/pointer actionable; staged preview retains every accepted Market field and explicit replacement status.
 - Import history now records a demo batch identifier and whether replacement confirmation was involved. Authenticated uploader identity and immutable version history remain production/backend work.
 - This materially advances F03/F06/F17/F19. F05 remains open: the GitHub demo does not pretend to enforce secure month locks/reopening.
+
+
+## October 11 leadership reporting continuity pass
+- Removed the remaining printable-board implication that Mobile Bus has a pounds measure; the board program table now states “Not tracked” for bus food pounds, matching the confirmed off-site rule.
+- Board Reporting now surfaces how many selected months have a recorded staff month-end review alongside automated source-presence checks. A staff review remains explicitly non-approval/non-locking.
+- A recorded month-end staff review now offers a direct handoff into Board Reporting, tightening the monthly close → leadership report workflow without inventing secure publication approval.
+- Existing financial correction reason + prior-value history was retained rather than duplicated. Production still needs authenticated actors and immutable audit/version storage.
