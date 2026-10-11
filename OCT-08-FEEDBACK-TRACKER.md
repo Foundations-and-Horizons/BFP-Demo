@@ -240,3 +240,9 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Added a shared physical count validity check requiring present, finite, nonnegative opening and actual counts. Applied it to the board packet month-by-month count readiness, dashboard month-end readiness and inventory closeout guide. The warehouse exception table now distinguishes invalid count values from provisional counts.
 - These checks assess source completeness only; they do not certify stock math or implement month locks. Rachelle's source rules and live browser/PDF acceptance remain open.
 - Volunteer management remains Coming Soon and out of current paid scope.
+
+
+## October 11 location-specific reporting integrity
+- Board source-readiness checks now explicitly require a Market monthly aggregate and a financial summary for the active Bountiful location for every selected reporting month. The All locations option currently checks Bountiful only, because Northern Davis is planned and not an active source. Selecting Northern Davis explicitly does not silently borrow Bountiful source rows.
+- The demo JavaScript asset query was bumped to v74 so GitHub Pages clients fetch the updated application after deployment.
+- These are code commits, not live-browser acceptance. Review actual location reporting and source definitions with Rebekah before production.
