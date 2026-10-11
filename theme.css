@@ -55,3 +55,18 @@ th{letter-spacing:.2px}
 @media(max-width:1050px){.executive-start{flex-direction:column;align-items:stretch}.executive-actions{flex-direction:row}.executive-actions button{flex:1}.attention-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.executive-start{padding:24px 21px}.executive-actions{flex-direction:column}.attention-grid{grid-template-columns:1fr;gap:10px}.attention-item{min-height:105px;padding:17px 20px}.attention-item strong{font-size:29px}.home-priorities{padding:17px 13px}.executive-start h2{font-size:29px}}
 @media print{.executive-start,.attention-grid,.home-priorities,.home-data-note{display:none!important}}
+
+
+/* Board presentation: make the board packet the hero, not the controls. */
+.board-presentation-intro{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:34px 38px;margin:0 0 22px;border-radius:20px;color:#fff;background:linear-gradient(112deg,#153d34 0%,#1d6250 65%,#286d55 100%);box-shadow:0 15px 38px #173d3221}
+.board-presentation-intro .eyebrow{color:#bbdfcd;font-size:10px;letter-spacing:1.7px}
+.board-presentation-intro h2{font-size:clamp(26px,3vw,38px);letter-spacing:-1.2px;line-height:1.13;margin:10px 0;color:#fff;max-width:660px}
+.board-presentation-intro p{color:#d7e8dc;max-width:650px;font-size:14px;line-height:1.65;margin:0}
+.board-presentation-facts{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.board-presentation-facts span{padding:7px 11px;border-radius:30px;border:1px solid #ffffff37;background:#ffffff10;color:#e7f2e9;font-size:11px}
+.board-presentation-actions{display:flex;flex-direction:column;align-items:stretch;gap:9px;min-width:216px}
+.board-presentation-actions .primary{background:#fff;color:#17573c;border:1px solid #fff;font-size:13px;padding:14px 16px}
+.board-presentation-actions .primary:hover{background:#e7f3e9;color:#134e35}
+.board-presentation-actions>span{color:#d0e5d6;font-size:11px;text-align:center}
+@media(max-width:850px){.board-presentation-intro{flex-direction:column;align-items:stretch;padding:27px 24px}.board-presentation-actions{min-width:0}}
+@media print{.board-presentation-intro{display:none!important}}
