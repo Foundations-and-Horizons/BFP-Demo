@@ -11,3 +11,7 @@
 .board-brief .report-appendix th,.board-brief .report-appendix td{padding:2mm 2.5mm;text-align:left;border-bottom:1px solid #dce4df;vertical-align:top}
 .board-brief .report-appendix th{background:#eef4f0}
 @media print{.board-brief .report-appendix{padding:4mm 0;break-before:page}.board-brief .report-appendix h3{break-after:avoid}.board-brief .report-appendix table{break-inside:auto}.board-brief .report-appendix tr{break-inside:avoid}}
+
+/* Page selection must be respected on screen and when printing. */
+.board-brief > .report-page[hidden]{display:none!important}
+@media print{.board-brief > .report-page[hidden]{display:none!important}}
