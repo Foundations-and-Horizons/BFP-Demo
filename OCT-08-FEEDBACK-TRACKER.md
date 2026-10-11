@@ -129,3 +129,11 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Operational Reports now surfaces the same Market monthly source summary alongside the date-filtered synthetic visit ledger, making the source boundary visible outside Board Reporting as well.
 - Invalid reporting-period export protection remains active globally; annual Pantry Packs entry and grant browser-local save/edit workflows are present in current source. These still require live-browser acceptance testing before their audit findings are marked fully closed.
 - Production auth, durable shared storage, enforceable month locks, and final warehouse calculations remain intentionally open pending the BFP-owned backend and Rachelle/Tryn workflow decisions.
+
+
+## October 11 large-batch off-site / Grocery Rescue alignment
+- Cross-checked implementation against the October 8 planning notes and audit F24 before changing the workflow.
+- Mobile Bus service entry no longer asks for or stores pounds; its program summary reports households and person-visits only.
+- Off-site reporting now explicitly organizes service by stop/location and links Mini Market location reporting from the Off-site Services workspace.
+- Mobile Truck weight reconciliation remains a separate demonstration workflow and is explicitly conditional on Rachelle confirming how outgoing loads and returned food should re-enter inventory; no bus weights are inferred from truck data.
+- Grocery Rescue now clearly uses Incoming / Outgoing Food as its single daily receipt source, while its own screen is a reporting view. The preferred MealConnect daily handoff and fallback monthly import are labeled pending rather than represented as connected.
