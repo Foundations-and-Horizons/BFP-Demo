@@ -31,3 +31,7 @@ Rachelle's warehouse tracker, the official food-bank seven categories and transf
 ## Testing priorities
 
 Manually check navigation, section switching, date/location filters, each entry form, exports, inventory printing, board print preview, reset behavior, mobile viewport, and accessibility. JavaScript syntax validation alone does not verify browser interactions.
+
+## Current engagement scope
+
+Volunteer management is **outside the current paid work order**. Treat the volunteer management/kiosk/self-service features as **Coming Soon — separately scoped and funded**, not as an outstanding acceptance requirement for this engagement. Existing aggregate volunteer-hours figures used for community and board reporting are reporting data, not authorization to build a volunteer management platform. Do not implement PIN check-in, volunteer accounts, directory, scheduling, communications, photos or consent workflows under this work order without a new agreement.
