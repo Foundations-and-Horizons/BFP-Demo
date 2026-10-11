@@ -219,3 +219,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Board report month coverage now rejects malformed/invalid dates and inverted periods before evaluating monthly source completeness.
 - For periods not covering full calendar months, readiness keeps the period warning and does not manufacture a full-month source checklist that could be misleading.
 - Source-level inspection only. Browser form behavior and printed board report remain to be validated through the live application.
+
+
+## October 11 report readiness false-green and truck weight completeness fixes
+- If the selected date range is invalid or does not cover full calendar months, board readiness returns only a failing Period coverage check instead of an empty month list with vacuously passing source checks.
+- Truck exception review now validates loaded, returned, transferred and disposed values for missing, nonfinite and negative weights, then checks that returned + transferred + disposed does not exceed loaded.
+- These checks do not replace Rachelle’s official truck-return and warehouse reconciliation rules.
+- Code changes committed; browser end-to-end testing and PDF inspection remain pending.
