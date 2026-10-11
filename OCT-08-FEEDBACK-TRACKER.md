@@ -100,3 +100,6 @@ Inventory now includes a browser-local warehouse adjustment request queue with s
 
 ## Leadership closeout handoff — October 10
 Board Reporting now includes a month-by-month leadership handoff summarizing three source presence checks (warehouse count, finances, Market aggregate), pending warehouse adjustment requests, saved preparation name, and saved staff review name. Includes CSV export. Presence and named reviews are not approvals or period locks; all data remains browser-local. Warehouse truck exception checks now treat absent optional fields as zero instead of automatically flagging missing values as invalid; arithmetic mismatches still flag.
+
+## Board packet page customization — October 10
+Board Reporting now offers a three-page selection form for community impact/program breakdown, leadership outlook/narrative, and reporting sources appendix. Selections are saved per date range and location in browser localStorage and applied to report preview and print CSS. At least one page must remain selected. The existing browser print-to-PDF and narrative editing remain in place. This is not a server-generated PDF or authenticated saved report; live browser print layout QA remains outstanding.
