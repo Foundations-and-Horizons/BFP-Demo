@@ -226,3 +226,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Truck exception review now validates loaded, returned, transferred and disposed values for missing, nonfinite and negative weights, then checks that returned + transferred + disposed does not exceed loaded.
 - These checks do not replace Rachelle’s official truck-return and warehouse reconciliation rules.
 - Code changes committed; browser end-to-end testing and PDF inspection remain pending.
+
+
+## October 11 client-review preparation and financial source transparency
+- Monthly Financials now surfaces a source coverage warning before displaying totals when monthly financial records are missing or a partial-calendar-month date range is selected. The amounts remain synthetic and unaudited.
+- Added `BFP-STAFF-REVIEW-AND-INPUTS.md`: targeted walkthroughs, owner-specific material requests and proposed one-on-one agendas for Rebekah, Rachelle and Tryn; an internal acceptance checklist; and clear exclusion of volunteer management from the current paid work order.
+- Volunteer management remains Coming Soon and separately funded; aggregate volunteer-hours reporting is not a commitment to build volunteer management.
+- Live-browser form/PDF testing is not completed; source-only changes must not be labeled accepted.
