@@ -206,3 +206,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Extracted warehouseExceptionRowsForMonth(month) so the inventory panel and CSV continue using the selected ending month while board readiness evaluates all months.
 - This is a synthetic-data review signal only, not a certified warehouse balance, authorization, report publication lock or proof of valid truck re-entry rules.
 - Source inspection confirms helper, compatibility wrapper, inventory panel and CSV references. Browser end-to-end test and PDF print acceptance are still outstanding.
+
+
+## October 11 deployment and QA blocker review
+- Bumped index.html app.js cache key from v72 to v73 so clients request the latest reporting script.
+- Corrected missing `const` declaration in `warehouseExceptionRowsForMonth(month)`; without it the multi-month helper assigned several temporary values to implicit globals.
+- Tried to access the public GitHub Pages demo from the available local browser runtime; DNS resolution for `foundations-and-horizons.github.io` failed in that runtime, so no claim of a completed live-browser acceptance test is warranted.
+- Next acceptance work remains: run synthetic input workflows, validate CSV contents, test multi-month/location board readiness and print/PDF pagination in an actual accessible browser.
