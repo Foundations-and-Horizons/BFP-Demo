@@ -82,3 +82,37 @@ th{letter-spacing:.2px}
 .board-workspace-heading button{white-space:nowrap}
 @media(max-width:700px){.board-workspace-heading{flex-direction:column;align-items:stretch;padding:21px}.board-workspace-heading button{width:100%}}
 @media print{.board-workspace-heading{display:none!important}}
+
+
+/* Grant Management — consistent professional data-entry layout. */
+.grant-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.grant-metric{min-width:0;min-height:126px;background:#fff;border:1px solid #e0e9e2;border-radius:15px;padding:21px 23px;box-shadow:0 4px 18px #183c2b08;display:flex;flex-direction:column;align-items:flex-start}
+.grant-metric>span{font-size:10px;font-weight:760;letter-spacing:1.1px;color:#6a8072}
+.grant-metric strong{font-size:clamp(24px,2.3vw,33px);letter-spacing:-1.2px;color:#1b4937;line-height:1.3;margin:10px 0 4px;overflow-wrap:anywhere}
+.grant-metric small{font-size:11px;color:#74867b;line-height:1.4}
+.grant-editor,.grant-register{padding:29px 32px;margin-bottom:20px}
+.grant-editor-heading{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:27px}
+.grant-editor-heading h2{font-size:23px;margin:5px 0 8px;color:#193e30;letter-spacing:-.6px}
+.grant-editor-heading p{font-size:13px;color:#6a7c71;margin:0}
+.grant-eyebrow{font-size:10px;letter-spacing:1.4px;font-weight:800;color:#287747}
+.grant-demo-label{font-size:11px;color:#5f7d6b;background:#f0f7f1;border:1px solid #d8e8da;padding:7px 12px;border-radius:30px;white-space:nowrap}
+.grant-form{display:block}
+.grant-form-section{border-top:1px solid #e7eee8;padding:23px 0 26px}
+.grant-form-section h3{font-size:14px;letter-spacing:-.1px;margin:0 0 19px;color:#294d3c}
+.grant-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:21px 25px}
+.grant-form-grid>label{display:flex;flex-direction:column;align-items:stretch;gap:8px;min-width:0;font-size:12px;font-weight:700;color:#3e584b;line-height:1.35}
+.grant-form-grid>label .required{color:#a35c39}
+.grant-form-grid input,.grant-form-grid select{box-sizing:border-box;display:block;width:100%;min-width:0;height:45px;margin:0;padding:10px 13px;border:1px solid #cddcd1;border-radius:9px;background:#fff;font-size:14px;font-weight:450;color:#223d31}
+.grant-form-grid input::placeholder{color:#9aaba0}
+.grant-form-grid .grant-wide{grid-column:1/-1}
+.grant-form-actions{border-top:1px solid #e7eee8;padding-top:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.grant-form-actions button{min-height:43px;padding:10px 19px}
+.grant-form-actions span{margin-left:auto;color:#7b8b80;font-size:11px}
+.grant-register .section-head{align-items:center;margin-bottom:19px}
+.grant-register h2{font-size:21px;margin:0 0 6px}
+.grant-register .muted{font-size:12px;margin:0}
+.grant-empty{background:#f7faf8;border:1px dashed #cddfd1;border-radius:12px;padding:35px 22px;text-align:center}
+.grant-empty strong{font-size:15px;color:#28533d}
+.grant-empty p{font-size:13px;color:#728277;max-width:440px;margin:9px auto 0;line-height:1.6}
+@media(max-width:1150px){.grant-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.grant-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.grant-metric{padding:16px;min-height:105px}.grant-metric strong{font-size:23px}.grant-editor,.grant-register{padding:20px 16px}.grant-form-grid{grid-template-columns:1fr;gap:17px}.grant-form-grid .grant-wide{grid-column:auto}.grant-form-actions span{margin-left:0;width:100%}.grant-editor-heading{flex-direction:column;gap:12px}}
