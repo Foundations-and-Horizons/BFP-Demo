@@ -173,3 +173,9 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Added Inventory month-end exception review for truck load/return arithmetic (including returned pounds exceeding loaded), missing/invalid warehouse movement weights/types, and invalid food ledger weights.
 - Added exportable CSV evidence for these checks; they are arithmetic/completeness flags only, not certified reconciliation or authorization.
 - Physical count status remains provisional pending Rachelle's count rules, tare weights and truck return/re-entry treatment. Browser acceptance and synthetic-data workflow testing still outstanding.
+
+
+## October 11 warehouse exception validation follow-up
+- Fixed exception checker treating blank pound fields as numeric zero: blank incoming/outgoing weights, warehouse movement pounds and truck loaded/returned weights now flag for review.
+- Added truck over-allocation detection when returned + transferred + disposed pounds exceed loaded pounds, in addition to negative weights and returned > loaded.
+- Source-level checks confirm the exception panel is included in Inventory, CSV export handler exists, and the board/readiness/count/closeout functions are still present. This is **not** a live browser end-to-end workflow test; board print QA, actual form submission, and Rachelle's reconciliation approval remain open.
