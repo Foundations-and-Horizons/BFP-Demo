@@ -293,3 +293,41 @@ button:focus-visible,a:focus-visible,summary:focus-visible,[role="tab"]:focus-vi
 @media(max-width:800px){#content .section-head{flex-wrap:wrap}#content .section-head>div{min-width:0}#content .section-head button{max-width:100%}#content .card{min-width:0}}
 @media(max-width:550px){#content .toolbar button{white-space:normal}#content .section-head button{width:100%}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Welcome-screen signature treatment: brushed titanium, precise type, vivid interaction. */
+body.program-home{background:radial-gradient(ellipse at 85% 12%,rgba(255,255,255,.92),transparent 45%),linear-gradient(133deg,#d6dade 0%,#eef0f2 34%,#c8cfd3 72%,#e6e9ec 100%);background-attachment:fixed}
+body.program-home .shell{background:transparent}
+body.program-home header{background:rgba(255,255,255,.92);border-bottom:1px solid #cbd2d5;box-shadow:0 3px 20px #1d303b12}
+body.program-home .compact-command{box-shadow:0 22px 52px #102d2c36,0 2px 5px #071b1820;border:1px solid #31745e}
+body.program-home .compact-workspaces{margin-top:27px}
+body.program-home .compact-section-heading h2{color:#182c35;font-size:22px;letter-spacing:-.7px}
+body.program-home .compact-section-heading span{color:#52616b}
+body.program-home .compact-workspace-grid{gap:14px}
+body.program-home .compact-workspace{position:relative;isolation:isolate;overflow:visible;min-height:88px;padding:17px 21px;background:linear-gradient(155deg,#fff 0%,#f8fafb 100%);border:1px solid #d3dce0;border-left:4px solid #398e72;border-radius:14px;box-shadow:0 5px 16px #233f4d17;transform-origin:center;transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s,border-color .2s,background .2s;will-change:transform}
+body.program-home .compact-workspace:nth-child(2){border-left-color:#367fc5}
+body.program-home .compact-workspace:nth-child(3){border-left-color:#d37a48}
+body.program-home .compact-workspace:nth-child(4){border-left-color:#b18a2d}
+body.program-home .compact-workspace:nth-child(5){border-left-color:#299c91}
+body.program-home .compact-workspace:nth-child(6){border-left-color:#7a73bb}
+body.program-home .compact-workspace:nth-child(7){border-left-color:#3689a4}
+body.program-home .compact-workspace:nth-child(8){border-left-color:#b96379}
+body.program-home .compact-workspace-icon{display:none}
+body.program-home .compact-workspace-copy{gap:6px}
+body.program-home .compact-workspace-copy strong{font-size:16px;font-weight:800;letter-spacing:-.2px;color:#18333a}
+body.program-home .compact-workspace-copy small{font-size:12px;color:#586c76}
+body.program-home .compact-workspace-arrow{font-size:24px;font-weight:500;color:#3c826d;transition:transform .2s,color .2s}
+body.program-home .compact-workspace:hover{z-index:2;transform:translateY(-5px) scale(1.035);background:#fff;border-color:#5caa90;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #53b78b4a}
+body.program-home .compact-workspace:nth-child(2):hover{border-color:#367fc5;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #367fc55c}
+body.program-home .compact-workspace:nth-child(3):hover{border-color:#d37a48;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #d37a485c}
+body.program-home .compact-workspace:nth-child(4):hover{border-color:#b18a2d;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #b18a2d5c}
+body.program-home .compact-workspace:nth-child(5):hover{border-color:#299c91;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #299c915c}
+body.program-home .compact-workspace:nth-child(6):hover{border-color:#7a73bb;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #7a73bb5c}
+body.program-home .compact-workspace:nth-child(7):hover{border-color:#3689a4;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #3689a45c}
+body.program-home .compact-workspace:nth-child(8):hover{border-color:#b96379;box-shadow:0 16px 32px #1b4c4933,0 0 0 2px #b963795c}
+body.program-home .compact-workspace:hover .compact-workspace-arrow{transform:translateX(5px);color:#174f41}
+body.program-home .compact-stats button{transition:transform .2s,box-shadow .2s,background .2s}
+body.program-home .compact-stats button:hover{transform:translateY(-4px) scale(1.025);box-shadow:0 12px 25px #062c2947}
+body.program-home .compact-command-actions button{transition:transform .2s,box-shadow .2s,background .2s}
+body.program-home .compact-command-actions button:hover{transform:translateY(-3px) scale(1.045);box-shadow:0 9px 22px #062d2d66}
+@media(hover:none){body.program-home .compact-workspace:hover,body.program-home .compact-stats button:hover,body.program-home .compact-command-actions button:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){body.program-home .compact-workspace,body.program-home .compact-workspace-arrow,body.program-home .compact-stats button,body.program-home .compact-command-actions button{transition:none!important;will-change:auto}body.program-home .compact-workspace:hover,body.program-home .compact-stats button:hover,body.program-home .compact-command-actions button:hover{transform:none!important}}
