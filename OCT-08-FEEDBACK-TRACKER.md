@@ -153,3 +153,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Board Reporting now surfaces how many selected months have a recorded staff month-end review alongside automated source-presence checks. A staff review remains explicitly non-approval/non-locking.
 - A recorded month-end staff review now offers a direct handoff into Board Reporting, tightening the monthly close → leadership report workflow without inventing secure publication approval.
 - Existing financial correction reason + prior-value history was retained rather than duplicated. Production still needs authenticated actors and immutable audit/version storage.
+
+
+## October 11 warehouse month-end continuity pass
+- Added a single Inventory month-end guide that makes the intended demo sequence explicit: physical count → warehouse exceptions → provisional reconciliation → staff month-end review.
+- The guide reports whether the physical count exists, how many warehouse adjustment requests remain pending, whether a provisional reconciliation can be reviewed, and whether staff review has been recorded.
+- The workflow explicitly keeps Rachelle’s unresolved rules open: official physical inventory materials, average-weight/count-sheet rules, and final truck return/re-entry treatment are not invented by the demo.
+- A completed staff month-end review can continue directly to Board Reporting. No month lock or formal approval is claimed.
