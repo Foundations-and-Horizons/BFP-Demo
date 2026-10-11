@@ -103,3 +103,6 @@ Board Reporting now includes a month-by-month leadership handoff summarizing thr
 
 ## Board packet page customization — October 10
 Board Reporting now offers a three-page selection form for community impact/program breakdown, leadership outlook/narrative, and reporting sources appendix. Selections are saved per date range and location in browser localStorage and applied to report preview and print CSS. At least one page must remain selected. The existing browser print-to-PDF and narrative editing remain in place. This is not a server-generated PDF or authenticated saved report; live browser print layout QA remains outstanding.
+
+## Final board packet review — October 10
+Board Reporting now includes a final preparation review summarizing missing automated source checks, pending warehouse adjustment requests, selected report pages, and saved human review notes. The panel distinguishes 'Needs attention' from 'Ready for human review' (with optional cautions), exports a review checklist CSV and opens the selected packet preview. No publication approval, certified financial verification, server-side report storage, or production audit is implied. Browser interaction and print QA remain pending.
