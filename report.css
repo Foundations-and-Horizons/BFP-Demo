@@ -15,3 +15,11 @@
 /* Page selection must be respected on screen and when printing. */
 .board-brief > .report-page[hidden]{display:none!important}
 @media print{.board-brief > .report-page[hidden]{display:none!important}}
+
+/* Print the actual board packet, never the interactive review cards below it. */
+@media print{
+  #content[data-view="board"] > :not(.board-brief){display:none!important}
+  #content[data-view="board"] > .board-brief{display:block!important}
+  .board-brief > .report-page[hidden]{display:none!important}
+  .board-brief > .report-page:not([hidden]):first-of-type{break-before:auto}
+}
