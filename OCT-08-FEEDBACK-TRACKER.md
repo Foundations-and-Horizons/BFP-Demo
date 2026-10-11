@@ -199,3 +199,10 @@ User supplied `BFP-Visual-Usability-Audit(1).md`, documenting F01–F30. Priorit
 - Inventory closeout guide now shows both pending adjustment requests and flagged data-quality issues, and staff review lookup respects selected location.
 - This is a **review signal**, not a lock, approval, reconciliation certification, or publication gate. Source presence does not mean validated totals.
 - Live browser workflow testing and exported board PDF verification remain open; these commits were not end-to-end browser tested.
+
+
+## October 11 multi-month board readiness update
+- Board report source-readiness now checks pending warehouse adjustment requests and arithmetic/completeness exceptions for **each month** in the selected report period, not just the final month.
+- Extracted warehouseExceptionRowsForMonth(month) so the inventory panel and CSV continue using the selected ending month while board readiness evaluates all months.
+- This is a synthetic-data review signal only, not a certified warehouse balance, authorization, report publication lock or proof of valid truck re-entry rules.
+- Source inspection confirms helper, compatibility wrapper, inventory panel and CSV references. Browser end-to-end test and PDF print acceptance are still outstanding.
