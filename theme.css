@@ -331,3 +331,30 @@ body.program-home .compact-command-actions button{transition:transform .2s,box-s
 body.program-home .compact-command-actions button:hover{transform:translateY(-3px) scale(1.045);box-shadow:0 9px 22px #062d2d66}
 @media(hover:none){body.program-home .compact-workspace:hover,body.program-home .compact-stats button:hover,body.program-home .compact-command-actions button:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){body.program-home .compact-workspace,body.program-home .compact-workspace-arrow,body.program-home .compact-stats button,body.program-home .compact-command-actions button{transition:none!important;will-change:auto}body.program-home .compact-workspace:hover,body.program-home .compact-stats button:hover,body.program-home .compact-command-actions button:hover{transform:none!important}}
+
+/* Synthetic team access management — simple enough to demonstrate without training. */
+.team-demo-banner{background:#fff8e9!important;border:1px solid #e9d29b!important;color:#654a17}
+.team-demo-banner strong{font-size:13px;letter-spacing:.5px}
+.team-demo-banner p{margin:7px 0 0;line-height:1.6}
+.team-member-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.team-member{display:flex;flex-direction:column;justify-content:space-between;gap:16px;background:#f8faf9;border:1px solid #d9e5df;border-radius:14px;padding:18px}
+.team-member strong{font-size:17px;color:#163c31}
+.team-member p{margin:5px 0}
+.team-member small{color:#586d64}
+.team-member-actions,.team-form-actions{display:flex;flex-wrap:wrap;gap:9px}
+.team-member-actions button{flex:1;white-space:nowrap}
+.team-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}
+.team-form-grid label,.team-pin-form label{display:flex;flex-direction:column;gap:7px;font-weight:650}
+.team-form-grid input,.team-form-grid select,.team-pin-form input{width:100%;border:1px solid #b9cdc2;border-radius:9px;padding:11px;background:#fff}
+.team-permissions{border:1px solid #d5e3dc;border-radius:13px;padding:18px;margin:15px 0}
+.team-permissions legend{font-weight:750;padding:0 8px}
+.team-permission-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.team-permission-grid label{display:flex;align-items:center;gap:10px;min-height:43px;padding:9px 12px;background:#f7faf8;border:1px solid #e2ebe5;border-radius:9px}
+.team-permission-grid input{width:19px;height:19px;accent-color:#25784c}
+.team-pin-form{display:flex;align-items:end;gap:12px;max-width:480px}
+.team-pin-form label{flex:1}
+.team-preview-notice{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;background:#163f36;color:#fff;padding:13px 26px;font-size:13px}
+.team-preview-notice strong{letter-spacing:.4px}
+.team-preview-notice span{color:#c7e1d5}
+.team-preview-notice button{background:#f5d68a;color:#203e30;border:0;font-weight:750}
+@media(max-width:750px){.team-member-grid,.team-form-grid,.team-permission-grid{grid-template-columns:1fr}.team-pin-form{flex-direction:column;align-items:stretch}.team-preview-notice{padding:12px 16px}}
