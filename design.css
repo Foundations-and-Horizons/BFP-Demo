@@ -21,3 +21,5 @@ body.task-workspace,body.volunteer-workspace{font-family:'Segoe UI',Arial,sans-s
 .studio-source-list button>span:nth-child(2){display:flex;align-items:center;justify-content:space-between;gap:10px}.studio-source-list small{margin-top:0}.studio-source-list button{padding:12px 0}.studio-source-note{font-size:11px}.studio-hero-copy{padding-top:32px;padding-bottom:32px}.volunteer-workspace .small{min-height:44px}.vol-save-notice{padding:12px 18px;margin:18px 32px 0;background:#e5f0dd;border:1px solid #a8c595;border-radius:9px;color:#315b39;font-size:14px}.vol-table-hint{display:none}
 @media(max-width:600px){.vol-table-hint{display:block;font-size:13px;color:#597351;margin:18px 0 8px}.vol-save-notice{margin:14px 16px 0}.studio-source-note{font-size:12px}.studio-source-list small{font-size:12px}.studio-hero-copy{padding-top:28px;padding-bottom:28px}}
 @media print{.vol-save-notice,.vol-table-hint{display:none!important}}
+
+@media(max-width:600px){.task-workspace #content>.studio-month-card{background:#fff;border:1px solid #d6e1ce;border-radius:13px;padding:23px;margin:0 0 28px}.task-workspace .studio-hero{margin-bottom:26px!important}}
